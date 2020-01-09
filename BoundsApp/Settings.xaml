@@ -1,0 +1,43 @@
+﻿<mah:MetroWindow  x:Class="BoundsApp.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="设置" Height="294.966" Width="511.075" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="MetroWindow_Loaded">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/bg.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Button x:Name="BtnSeting" Content="保存配置" HorizontalAlignment="Left" Margin="321,209,0,0" VerticalAlignment="Top" Width="75" Click="BtnSeting_Click"/>
+        <Button x:Name="BtnClose" Content="关闭" HorizontalAlignment="Left" Margin="414,209,0,0" VerticalAlignment="Top" Width="75"  Click="BtnShow_Click" />
+        <Label Content="奖品1" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Width="41"/>
+        <Label Content="奖品2" HorizontalAlignment="Left" Margin="174,31,0,0" VerticalAlignment="Top" Width="41"/>
+        <Label Content="奖品3" HorizontalAlignment="Left" Margin="337,31,0,0" VerticalAlignment="Top" Width="41"/>
+        <Label Content="奖品4" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" Width="41"/>
+        <Label Content="奖品5" HorizontalAlignment="Left" Margin="174,71,0,0" VerticalAlignment="Top" Width="41"/>
+        <Label Content="奖品6" HorizontalAlignment="Left" Margin="337,71,0,0" VerticalAlignment="Top" Width="41"/>
+        <Label Content="奖品7" HorizontalAlignment="Left" Margin="10,117,0,0" VerticalAlignment="Top" Width="41"/>
+        <Label Content="奖品8" HorizontalAlignment="Left" Margin="174,117,0,0" VerticalAlignment="Top" Width="41"/>
+        <Label Content="奖品9" HorizontalAlignment="Left" Margin="337,117,0,0" VerticalAlignment="Top" Width="41"/>
+        <Label Content="歌曲路径：" HorizontalAlignment="Left" Margin="159,161,0,0" VerticalAlignment="Top" Width="67"/>
+        <TextBox Name="TxtMusic" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="226,160,0,80" TextWrapping="NoWrap"  AcceptsReturn="False" VerticalAlignment="Center" Width="183" RenderTransformOrigin="1.661,0.435"/>
+        <Button Name="TxtFile" Content="选择" HorizontalAlignment="Left" Margin="414,157,0,0" VerticalAlignment="Top" Width="75" Click="TxtFile_Click"/>
+        <TextBox Name="One" Tag="0,1" HorizontalAlignment="Left" Height="23" Margin="55,30,0,210" TextWrapping="NoWrap"  AcceptsReturn="False" VerticalAlignment="Center" Width="107"/>
+        <TextBox Name="Two" Tag="1,1" HorizontalAlignment="Left" Height="23" Margin="55,70,0,170" TextWrapping="NoWrap"  AcceptsReturn="False" VerticalAlignment="Center" Width="107"/>
+        <TextBox Name="Three" Tag="2,1" HorizontalAlignment="Left" Height="23" Margin="55,116,0,124" TextWrapping="NoWrap"  AcceptsReturn="False" VerticalAlignment="Center" Width="107"/>
+        <TextBox Name="Four" Tag="0,2" HorizontalAlignment="Left" Height="23" Margin="217,30,0,210" TextWrapping="NoWrap"  AcceptsReturn="False" VerticalAlignment="Center" Width="107"/>
+        <TextBox Name="Five" Tag="1,2" HorizontalAlignment="Left" Height="23" Margin="217,70,0,170" TextWrapping="NoWrap"  AcceptsReturn="False" VerticalAlignment="Center" Width="107"/>
+        <TextBox Name="Six" Tag="2,2" HorizontalAlignment="Left" Height="23" Margin="217,116,0,124" TextWrapping="NoWrap"  AcceptsReturn="False" VerticalAlignment="Center" Width="107"/>
+        <TextBox Name="Senven" Tag="0,3" HorizontalAlignment="Left" Height="23" Margin="382,30,0,210" TextWrapping="NoWrap"  AcceptsReturn="False" VerticalAlignment="Center" Width="107"/>
+        <TextBox Name="Eight" Tag="1,3" HorizontalAlignment="Left" Height="23" Margin="382,70,0,170" TextWrapping="NoWrap"  AcceptsReturn="False" VerticalAlignment="Center" Width="107"/>
+        <TextBox Name="Night" Tag="2,3" HorizontalAlignment="Left" Height="23" Margin="382,116,0,124" TextWrapping="NoWrap"  AcceptsReturn="False" VerticalAlignment="Center" Width="107"/>
+        <Label Content="抽奖次数" HorizontalAlignment="Left" Margin="10,159,0,0" VerticalAlignment="Top" Width="61"/>
+
+        <xctk:IntegerUpDown Name="PageNumber" Margin="76,160,371,83" Height="23" Value="1" Minimum="1"/>
+
+
+    </Grid>
+</mah:MetroWindow>
